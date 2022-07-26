@@ -30,7 +30,7 @@
       </div>
       
 
-      <form>
+      <form method="post">
         <h3>Let's do this!</h3>
         <div class="row1">
           <div>
@@ -59,18 +59,19 @@
         <div class="row3">
           <div>
             <label for="pword">PASSWORD</label>
-            <input type="password" id="pword" name="pass">
+            <input type="password" id="pword" name="pass"  onkeyup="check();" required>
           </div>
 
           <div>
             <label for="confirm">CONFIRM PASSWORD</label>
-            <input type="password" id="confirm" name="confirm">
+            <input type="password" id="confirm" name="confirm" onkeyup="check();" required>
           </div>
         </div>
+        <input type="submit" id="button" value="Create Account"></input>
       </form>
       
       <div class="right-bottom">
-        <button type="submit">Create Account</button>
+        
         <p>Already have an account? <span>Log in</span></p>
       </div>
     </div>
